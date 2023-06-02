@@ -3,7 +3,7 @@ using namespace std;
 //#define ARRAY
 #define tab "\t"  
 #define ARRAYS_SHIFT
-//#define ARRAYS_SHIFT_2
+
 
 void main()
 {
@@ -44,41 +44,5 @@ void main()
 
 #endif // ARRAY
 
-#ifdef ARRAYS_SHIFT
-
-	setlocale(LC_ALL, "Russian");
-	const int n = 10;
-	int arr[n] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-	//Вывод исходного массива на экран
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << tab;
-	}
-	cout << endl;
-	//циклический сдвиг массива
-	int number_of_shifts;
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
-	for (int i = 0; i < number_of_shifts; i++)
-
-	{
-		int buffer = arr[0];
-		for (int i = 0; i < n; i++)
-		{
-			arr[i] = arr[i + 1];
-		}
-		arr[n - 1] = buffer;
-	}
-	//вывод сдвинутого массива на экран
-for (int i = 0; i < n; i++)
-	{
-	cout << arr[i] << tab;
-	}
-cout << endl;
-#endif ARRAYS_SHIFT
-
-#ifdef ARRAYS_SHIFT_2
-
-
-#endif // ARRAYS_SHIFT_2
 
 }
