@@ -12,6 +12,7 @@ void main()
 	double matrix_three[SIZE][SIZE] = {};
 	double matrix_two[SIZE][SIZE] = {};
 	double matrix_result[SIZE][SIZE] = {};
+
 	for (int i = 0; i < SIZE; i++)
 	{
 		for (int j = 0; j < SIZE; j++)
